@@ -1,0 +1,14 @@
+{% extends "template.html" %}
+{% block content %}
+
+<h1>Register</h1>
+
+<form action="{{ url_for('register') }}" method="post">
+    <label for="username">Userame:</label><br>
+    <input type="username" name="username" placeholder="Username" required autofocus><br>
+    <label for="email">Email:</label><br>
+    <input type="email" name="email" placeholder="Email" required><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+{% endblock %}
