@@ -1,0 +1,12 @@
+{% extends "template.html" %}
+{% block content %}
+
+<h1>Hello</h1>
+
+List of Users:
+<ul>
+    {% for u in users %}
+    <li>{{ u }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
